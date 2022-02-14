@@ -1,0 +1,58 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.button {
+  background: #03A9F4;
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: aliceblue;
+  width: 240px;
+  padding: 0px 20px;
+  margin: 20px 0px;
+}
+
+weather div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.weather span {
+  font-size: 17px;
+  font-weight: 500;
+  color: black ;
+  margin-left: 80px;
+}
+
+.location {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  margin: 15px 0px;
+}
+.loading span {
+  font-size: 20px;
+  color: #009688;
+  font-weight: 600;
+}
