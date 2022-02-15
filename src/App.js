@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -32,7 +33,7 @@ const getLocation = () => {
 
 useEffect(() => {
   setLoading(true);
-  const apiURL = `http://api.weatherapi.com/v1/current.json?key=a1bdb50b99074f12be2140610221102&q=${coords}&aqi=no
+  const apiURL = `https://api.weatherapi.com/v1/current.json?key=a1bdb50b99074f12be2140610221102&q=${coords}&aqi=no
   `;
   fetch(apiURL).then(res => res.json()).then((data) => {
     setCurrent({
@@ -56,7 +57,7 @@ useEffect(() => {
       {!loading &&
       <div>
       <div className='weather'>
-        <img src={current.icon} />
+        <img src={current.icon} alt="icon" />
         <div>
           Sıcaklık
         <span>{current.temp}</span>
